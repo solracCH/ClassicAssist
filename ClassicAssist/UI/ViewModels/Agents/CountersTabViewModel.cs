@@ -132,7 +132,7 @@ namespace ClassicAssist.UI.ViewModels.Agents
                 if ( Warn && item.Count <= WarnAmount && count > WarnAmount )
                 {
                     Commands.SystemMessage( string.Format( Strings.Counter___0___amount_is_now__1____, item.Name,
-                        item.Count ) );
+                        item.Count ), 37 );
                 }
             }
         }
