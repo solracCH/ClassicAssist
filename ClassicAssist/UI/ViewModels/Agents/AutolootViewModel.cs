@@ -383,7 +383,7 @@ namespace ClassicAssist.UI.ViewModels.Agents
                     return;
                 }
 
-                ActionPacketQueue.EnqueueActionPacket( new UseObject( serial ), QueuePriority.Medium );
+                //ActionPacketQueue.EnqueueActionPacket( new UseObject( serial ), QueuePriority.Medium );
 
                 PacketWaitEntry we = Engine.PacketWaitEntries.Add(
                     new PacketFilterInfo( 0x3C, new[] { PacketFilterConditions.IntAtPositionCondition( serial, 19 ) } ),
